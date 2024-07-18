@@ -27,7 +27,6 @@ For the first time, designers can create and ship beautiful animations without a
   s.tvos.deployment_target = '9.0'
 
   s.source_files = 'lottie-ios/Classes/**/*'
-  s.resource_bundles = {'LottiePrivacyInfo' => ['PrivacyInfo.xcprivacy']}
   s.osx.exclude_files = ['lottie-ios/Classes/PublicHeaders/LOTAnimationTransitionController.h',
                          'lottie-ios/Classes/Private/LOTAnimationTransitionController.m',
                           'lottie-ios/Classes/PublicHeaders/LOTCacheProvider.h',
@@ -36,9 +35,9 @@ For the first time, designers can create and ship beautiful animations without a
                           'lottie-ios/Classes/Private/LOTAnimatedSwitch.m',
                           'lottie-ios/Classes/PublicHeaders/LOTAnimatedControl.h',
                           'lottie-ios/Classes/Private/LOTAnimatedControl.m']
-  # s.resource_bundles = {
-  #   'lottie-ios' => ['lottie-ios/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'lottie-ios' => ['lottie-ios/PrivacyInfo.xcprivacy']
+  }
 
   s.public_header_files = 'lottie-ios/Classes/PublicHeaders/*.h'
   s.ios.frameworks = 'UIKit'
